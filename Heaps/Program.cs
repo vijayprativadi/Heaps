@@ -15,9 +15,20 @@ namespace Heaps
             minHeap.Add(2);
             minHeap.Add(15);
 
+            Console.WriteLine("Min Heap:");
             Console.WriteLine("Peek:" + minHeap.Peek());
             Console.WriteLine("Pop:" + minHeap.Pop());
             Console.WriteLine("Peek:" + minHeap.Peek());
+
+            MaxHeap maxHeap = new MaxHeap(10);
+            maxHeap.Add(3);
+            maxHeap.Add(2);
+            maxHeap.Add(15);
+
+            Console.WriteLine("Max Heap:");
+            Console.WriteLine("Peek:" + maxHeap.Peek());
+            Console.WriteLine("Pop:" + maxHeap.Pop());
+            Console.WriteLine("Peek:" + maxHeap.Peek());
 
             Console.ReadKey();
         }
