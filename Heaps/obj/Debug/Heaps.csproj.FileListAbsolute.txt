@@ -1,1 +1,6 @@
 C:\Users\Sai Vijay Kiran\Documents\GitHub\Heaps\Heaps\Heaps\bin\Debug\Heaps.exe.config
+C:\Users\Sai Vijay Kiran\Documents\GitHub\Heaps\Heaps\Heaps\bin\Debug\Heaps.exe
+C:\Users\Sai Vijay Kiran\Documents\GitHub\Heaps\Heaps\Heaps\bin\Debug\Heaps.pdb
+C:\Users\Sai Vijay Kiran\Documents\GitHub\Heaps\Heaps\Heaps\obj\Debug\Heaps.csprojResolveAssemblyReference.cache
+C:\Users\Sai Vijay Kiran\Documents\GitHub\Heaps\Heaps\Heaps\obj\Debug\Heaps.exe
+C:\Users\Sai Vijay Kiran\Documents\GitHub\Heaps\Heaps\Heaps\obj\Debug\Heaps.pdb
