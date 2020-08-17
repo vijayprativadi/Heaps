@@ -31,9 +31,11 @@ namespace Heaps
             Console.WriteLine("Peek:" + maxHeap.Peek());
 
             HeapPrograms heapPrograms = new HeapPrograms();
-            int[] kthLargestNums = new int[] { 1, 2, 3, 4, 5 };
-            Console.WriteLine("Find Kth Largest " + heapPrograms.FindKthLargest(kthLargestNums, 2));
-            Console.WriteLine("Find Kth Smallest " + heapPrograms.FindKthSmallest(kthLargestNums, 2));
+            int[] kthLargestNums = new int[] { 10, 2, 3, 4, 5 };
+            Console.WriteLine("Find Kth Largest: " + heapPrograms.FindKthLargest(kthLargestNums, 2));
+
+
+            Console.WriteLine("Is Min Heap:  " + heapPrograms.isMinHeap(kthLargestNums, 0));
 
             Console.ReadKey();
         }

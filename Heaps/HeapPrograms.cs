@@ -36,6 +36,23 @@ namespace Heaps
 
             return minHeap.First().Key;
         }
-    }
+        
+        public bool isMinHeap(int[] A, int i)
+        {
+            //Leaf Node is Heap
+            if (2 * i + 2 > A.Length)
+            {
+                return true;
+            }
+            
+            // recursively check if left child is heap
+            bool left = (A[i] <= A[2 * i + 1]) && isMinHeap(A, 2 * i + 1);
+            
+            bool right = (2 * i + 2 == A.Length) ||
+                            (A[i] <= A[2 * i + 2] && isMinHeap(A, 2 * i + 2));
 
+            // return true if both left and right child are heap
+            return left && right;
+        }
+    }
 }
