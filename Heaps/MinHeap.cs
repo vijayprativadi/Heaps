@@ -88,7 +88,7 @@ namespace Heaps
             _elements[0] = _elements[_size - 1];
             _size--;
 
-            ReCalculateDown();
+            SiftDown();
 
             return result;
         }
@@ -101,10 +101,10 @@ namespace Heaps
             _elements[_size] = element;
             _size++;
 
-            ReCalculateUp();
+            SiftUp();
         }
 
-        private void ReCalculateDown()
+        private void SiftDown()
         {
             int index = 0;
             while (HasLeftChild(index))
@@ -125,7 +125,7 @@ namespace Heaps
             }
         }
 
-        private void ReCalculateUp()
+        private void SiftUp()
         {
             var index = _size - 1;
             while (!IsRoot(index) && _elements[index] < GetParent(index))

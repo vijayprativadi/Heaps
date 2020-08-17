@@ -30,6 +30,11 @@ namespace Heaps
             Console.WriteLine("Pop:" + maxHeap.Pop());
             Console.WriteLine("Peek:" + maxHeap.Peek());
 
+            HeapPrograms heapPrograms = new HeapPrograms();
+            int[] kthLargestNums = new int[] { 1, 2, 3, 4, 5 };
+            Console.WriteLine("Find Kth Largest " + heapPrograms.FindKthLargest(kthLargestNums, 2));
+            Console.WriteLine("Find Kth Smallest " + heapPrograms.FindKthSmallest(kthLargestNums, 2));
+
             Console.ReadKey();
         }
     }
